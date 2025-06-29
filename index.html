@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Trainer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+            <button id="processText">Process Text</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="top-bar">
+            <button id="openModal">New Text</button>
+            <button id="themeToggle">🌙/☀️</button>
+        </div>
+        <div class="progress-bar-container">
+            <div id="progressBar" class="progress-bar"></div>
+        </div>
+        <div class="navigation navigation-top">
+            <button id="prevSentence">Previous</button>
+            <button id="nextSentence">Next</button>
+        </div>
+        <div class="main-content">
+            <div class="sentence-section">
+                <div id="sentenceDisplay"></div>
+            </div>
+            <div class="translation-section">
+                <textarea id="translation" placeholder="Write your translation here..."></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
