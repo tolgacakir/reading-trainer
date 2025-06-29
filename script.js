@@ -82,3 +82,12 @@ function displaySentence() {
     }
     updateProgressBar();
 }
+
+window.onload = function() {
+    const theme = localStorage.getItem('theme');
+    if(theme === 'light') {
+        document.body.classList.add('light-mode');
+    }
+    inputText.value = "This is the first sentence. Here is the second one! Is this the third sentence? Yes, it is.";
+    modal.style.display = 'flex';
+};
